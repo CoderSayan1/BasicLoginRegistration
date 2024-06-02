@@ -23,7 +23,10 @@ export default function Login() {
             } else{
                 setData({});
                 toast.success("Logged in successfully");
-                navigate('/dashboard');
+                navigate('/dashboard', {
+                    replace: true
+                });
+                window.location.reload();
             }
         } catch (error) {
             console.log("Error comes from login side", error);            
