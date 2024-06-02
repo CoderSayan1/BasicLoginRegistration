@@ -9,7 +9,7 @@ export function UserContextProvider({children}){
     const [user, setUser] = useState(null);
     const fetchUserProfile = async () =>{
         try {
-            const response = await axios.get(`https://basicloginregistration.onrender.com/api/v1/users/profile`); // server url added
+            const response = await axios.get(`${serverUrl}/v1/users/profile`);
             setUser(response.data);
         } catch (error) {
             // console.error("Error for fetching user profile", error);
