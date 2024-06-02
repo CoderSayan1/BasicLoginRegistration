@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser'
 
 
 const app = express()
-const origin = process.env.CORS_ORIGIN
+const origin = "https://basic-login-registration.vercel.app"
 // middleware
 app.use(express.json());
 app.use(cookieParser());
