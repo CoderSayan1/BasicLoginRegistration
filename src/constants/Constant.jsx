@@ -1,4 +1,4 @@
-export const serverUrl = import.meta.env.SERVER_URL || "http://localhost:8000/api"
+export const serverUrl = "https://basicloginregistration.onrender.com/api" || "http://localhost:8000/api"
 
 
 // "https://basicloginregistration.onrender.com/api"
