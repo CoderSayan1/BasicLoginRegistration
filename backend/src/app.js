@@ -5,7 +5,7 @@ import cookieParser from 'cookie-parser'
 
 
 const app = express()
-const origin = process.env.CORS_ORIGIN
+const origin = process.env.CORS_ORIGIN || 'http://localhost:5173'
 // middleware
 app.use(express.json());
 app.use(cookieParser());
